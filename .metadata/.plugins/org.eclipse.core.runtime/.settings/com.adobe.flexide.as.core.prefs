@@ -1,0 +1,16 @@
+asASDocColor=\#FFFFFF
+asBracketColor=\#F9FAF4
+asClassColor=\#52E3F6
+asCommentColor=\#FFFFFF
+asFunctionColor=\#A7EC21
+asInterfaceColor=\#52E3F6
+asMetadataColor=\#FFFFFF
+asOperatorColor=\#FF007F
+asPackageColor=\#52E3F6
+asReservedColor=\#FF007F
+asStringColor=\#ECE47E
+asTextColor=\#CFBFAD
+asTraceColor=\#A7EC21
+asVarColor=\#CFBFAD
+eclipse.preferences.version=1
+overriddenByCSS=,asCommentUnderline,asCommentColor,asStringColor,asReservedItalic,asBracketBold,asCommentStrikethrough,asVarColor,asOperatorUnderline,asStringStrikethrough,asTextColor,asStringItalic,asStringBold,asVarStrikethrough,asOperatorColor,asVarUnderline,asTextUnderline,asClassColor,asReservedColor,asMetadataStrikethrough,asPackageUnderline,asTextItalic,asMetadataUnderline,asCommentItalic,asPackageItalic,asTraceUnderline,asFunctionUnderline,asTextBold,asOperatorBold,asASDocStrikethrough,asVarItalic,asTraceStrikethrough,asCommentBold,asTraceColor,asASDocItalic,asPackageColor,asBracketUnderline,asInterfaceBold,asASDocColor,asFunctionItalic,asInterfaceColor,asPackageBold,asInterfaceStrikethrough,asClassItalic,asPackageStrikethrough,asFunctionBold,asClassStrikethrough,asStringUnderline,asMetadataColor,asTraceBold,asVarBold,asFunctionStrikethrough,asASDocUnderline,asFunctionColor,asTraceItalic,asClassUnderline,asInterfaceUnderline,asOperatorItalic,asOperatorStrikethrough,asBracketColor,asClassBold,asReservedUnderline,asASDocBold,asReservedStrikethrough,asTextStrikethrough,asMetadataBold,asMetadataItalic,asBracketItalic,asReservedBold,asInterfaceItalic,asBracketStrikethrough,

@@ -1,0 +1,22 @@
+package Interface_thread;
+
+public class MainClass {
+	
+	public static void main(String[]args) {
+		
+		
+		interthread interth = new interthread();
+//		                          (Runnable 인터페이스 를 구현한 클래스를 사용할때 , 스레드 이름 주기 이 interth 객체의 스레드 이름은 A 인것이다.)
+		Thread thread = new Thread(interth,"A");
+//		start 메소드를 호출하면 start 메소드는 run 메소드를 호출한다.
+		thread.start();
+		
+		System.out.println(Thread.currentThread().getName());
+		System.out.println("MainClass");
+		
+//		console 창
+		
+				
+	}
+
+}

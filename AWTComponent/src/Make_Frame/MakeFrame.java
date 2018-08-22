@@ -1,0 +1,156 @@
+package Make_Frame;
+
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Frame;
+<<<<<<< HEAD
+import java.awt.Label;
+=======
+>>>>>>> 95c50fc6c1c423387c91fdc14b7fb8d6367d5335
+import java.awt.List;
+import java.awt.Panel;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+<<<<<<< HEAD
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+=======
+>>>>>>> 95c50fc6c1c423387c91fdc14b7fb8d6367d5335
+
+
+//                     컴포넌트를 사용하기 위해 Frame상속 받고
+//									이벤트를 구현하기 위해 ActionListener 를 임플리먼트 한다
+//									액션리스너를 임플리먼트 하게되면 추상메소드 actionPerformed 를
+//									반드시 구현 해야한다.
+public class MakeFrame extends Frame implements ActionListener {
+
+//	외부에서 데이터를 수정및 접근을 제한하기위해 private 사용
+	
+//	리스트 데이터
+//		자료형 선언  변수이름
+	private List list;
+//	패널 데이터
+	private Panel panel;
+//	텍스트 필드 데이터
+	private TextField Text;
+//	확인 버튼 데이터
+	private Button btnok;
+//	나가기 버튼 데이터
+	private Button btnexit;
+	
+	
+
+	public MakeFrame() {
+//	외부에서 객체를 생성 하면 다른 메서드 를 사용하지않고 바로 생성 할수 있도록 디폴트 생성자에서 로직 작성
+		
+//		 내가 선언해 놓은 데이터에 객체 생성
+		list = new List();
+		panel = new Panel();
+		Text = new TextField();
+		btnok = new Button("OK");
+		btnexit = new Button("EXIT");
+		
+//		Frame 에 있는 메서드 파라미터에 BorderLayout 이라는 객체를 생성
+//		내가 만들어 놓은 컨포넌트들을 배치하기 위해서 생성한다.
+		setLayout(new BorderLayout());
+		
+//		add도 Frame의 메서드로써 컨포넌트들은 프레임 위에 올릴 수있기 때문에 프레임 에 추가 한다는 
+//		추가를 하는데 어떤 형태의 레이아웃에 어느위치에 둘것인지 정한다 north 북쪽 가장 상단을 의미한다.
+		add(panel,BorderLayout.NORTH);
+<<<<<<< HEAD
+//		BorderLayout 에  센터에 리스트를 추가 하겠다.
+		add(list,BorderLayout.CENTER);
+		
+//		아래작성 로직은 프레임에 올라간 panel 그위 에 추가 시킬 컴포넌트들
+//		         라벨 객체를 생성하여 panel 위에 올려준다.
+		panel.add(new Label("write"));
+		panel.add(Text);
+		panel.add(btnok );
+		panel.add(btnexit);
+		
+		
+//		버튼 눌렀을 시 이벤트 추가 
+//		addActionListener - 앞의 컴포넌트에 추가한다 어떠한 이벤트가 동작하도록 
+//		addActionListener의 파라미터에 interface 인 ActionListener 객체를 생성 하게되면 구현해야하는  actionPerformed 메소드가 생성된다
+//		
+		btnok.addActionListener(new ActionListener() {
+//			여기서 동작 정의
+//			 
+			@Override
+//			ActionEvent 버튼을 누르는 동작이 파라미터에 들어오고
+			public void actionPerformed(ActionEvent e) {
+//			리스트에 추가 해라(텍스트필드에 있는 텍스트를 가져와서)
+				list.add(Text.getText());
+				
+			}
+		});
+		
+		
+		
+		btnexit.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+//				화면 보이지 않게
+				setVisible(false);
+//				보이지는 않지만 메모리상에 존재하기에 그자원마저 회수
+				dispose();
+//				프로그램 종료
+				System.exit(0);
+				
+			}
+		});
+		
+//		이곳은 프로그램의 윈도우를 조작하기위한 로직
+		
+		addWindowListener(new WindowAdapter() {
+//			 x버튼을 누르면 닫히게 
+			@Override
+			public void windowClosing(WindowEvent e) {
+				setVisible(false);
+				dispose();
+				System.exit(0);
+			}
+		});
+		
+		
+		
+		
+
+		
+	}
+
+
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+=======
+		
+		
+		
+>>>>>>> 95c50fc6c1c423387c91fdc14b7fb8d6367d5335
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<<<<<<< HEAD
+
+=======
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+>>>>>>> 95c50fc6c1c423387c91fdc14b7fb8d6367d5335
+
+}

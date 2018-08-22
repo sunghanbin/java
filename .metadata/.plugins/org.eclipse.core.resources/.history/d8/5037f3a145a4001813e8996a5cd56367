@@ -1,0 +1,15 @@
+package MutiThread1;
+
+public class MainClass {
+	
+	public static void main(String[]args) {
+		
+		ThreadTest thts = new ThreadTest();
+		
+		Thread thread = new Thread(thts, "A");
+		Thread thread1 = new Thread(thts, "B");
+		thread.start();
+		thread1.start();
+	}
+
+}
