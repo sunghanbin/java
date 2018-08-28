@@ -3,20 +3,18 @@ package Make_Frame;
 import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.Frame;
-<<<<<<< HEAD
+
 import java.awt.Label;
-=======
->>>>>>> 95c50fc6c1c423387c91fdc14b7fb8d6367d5335
+
 import java.awt.List;
 import java.awt.Panel;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-<<<<<<< HEAD
+
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-=======
->>>>>>> 95c50fc6c1c423387c91fdc14b7fb8d6367d5335
+
 
 
 //                     컴포넌트를 사용하기 위해 Frame상속 받고
@@ -58,7 +56,7 @@ public class MakeFrame extends Frame implements ActionListener {
 //		add도 Frame의 메서드로써 컨포넌트들은 프레임 위에 올릴 수있기 때문에 프레임 에 추가 한다는 
 //		추가를 하는데 어떤 형태의 레이아웃에 어느위치에 둘것인지 정한다 north 북쪽 가장 상단을 의미한다.
 		add(panel,BorderLayout.NORTH);
-<<<<<<< HEAD
+
 //		BorderLayout 에  센터에 리스트를 추가 하겠다.
 		add(list,BorderLayout.CENTER);
 		
@@ -124,33 +122,13 @@ public class MakeFrame extends Frame implements ActionListener {
 
 
 	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
-=======
-		
-		
-		
->>>>>>> 95c50fc6c1c423387c91fdc14b7fb8d6367d5335
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-<<<<<<< HEAD
-
-=======
-	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
 		
 	}
->>>>>>> 95c50fc6c1c423387c91fdc14b7fb8d6367d5335
+
+
+
+	
 
 }
